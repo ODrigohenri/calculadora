@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Calculadora</title>
+    <style type="text/css">
+    h1{
+  margin-top: 2.5%;
+  padding-top: 2.5%;
+}
+body{
+  background-color: #008B8B;
+  color: white;
+  text-align: center;
+}
+form{
+  background-color: #7FFFD4;
+  padding: 5px;
+  width:250px;
+  height: 250px;
+  border-radius: 5px;
+  margin-left: 40.5%;
+  margin-top: 6.5%;
+}
+#visor{
+  border:none;
+  margin-top:15px;
+  width: 96%;
+  height:35px;
+  background-color: white;
+  border-radius: 3px;
+  font-weight: bolder;
+  font-size: 20px;
+  color: black;
+}
+#botoes{
+  background-color:#00CED1;
+  display:center;
+  padding:10px;
+  margin-left:5px;
+  margin-right: 5px;
+  margin-top: -5px;
+  border-color:black;
+  border-radius:3px;
+}
+.botao{
+  width: 50px;
+  height: 24px;
+  display: inline;
+  border: 0.5px solid;
+  background-color: #008080;
+  border-radius: 3px;
+  font-weight: bolder;
+  color: white;
+  font-size: 20px;
+}
+  </style>
+  </head>
+  <body>
+    <h1>Minha Primeira Calculadora</h1>
+    <form id='calculadora'>
+    <input type='text' id='visor'>
+    <br><br>
+    <div id='botoes'>
+    <input type='button' value='7' onclick='botao(value)' class='botao'>
+    <input type='button' value='8' onclick='botao(value)' class='botao'>
+    <input type='button' value='9' onclick='botao(value)' class='botao'>  
+    <input type='button' value='/' onclick='botao(value)' class='botao'>
+    <br><br>
+    <input type='button' value='4' onclick='botao(value)' class='botao'>
+    <input type='button' value='5' onclick='botao(value)' class='botao'>
+    <input type='button' value='6' onclick='botao(value)' class='botao'>  
+    <input type='button' value='*' onclick='botao(value)' class='botao'>
+    <br><br>
+    <input type='button' value='1' onclick='botao(value)' class='botao'>
+    <input type='button' value='2' onclick='botao(value)' class='botao'>
+    <input type='button' value='3' onclick='botao(value)' class='botao'>  
+    <input type='button' value='-' onclick='botao(value)' class='botao'>
+    <br><br>
+    <input type='button' value='0' onclick='botao(value)' id='maior' class='botao'>
+    <input type='button' value='=' onclick='calculate()' class='botao'>
+    <input type='button' value='C' onclick='reset()' class='botao'>  
+    <input type='button' value='+' onclick='botao(value)' class='botao'>   
+      </div>
+    </form>
+<script type="text/javascript">
+  function botao(numero){
+   var salvo = document.getElementById('visor').value;
+   document.getElementById('visor').value = salvo + numero;
+}
+function reset(){
+   var limpar = ""
+   document.getElementById('visor').value = limpar;
+}
+function calculate(){
+   var resultado = eval(document.getElementById('visor').value)
+   document.getElementById('visor').value = resultado; 
+}
+</script>
+  </body>
+</html>
