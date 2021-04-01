@@ -25,7 +25,7 @@
         background-color: white;
         border-radius: 3px;
         font-weight: 900;
-        font-size: 20px;
+        font-size: 30px;
         color: black;
         text-align: right;
       }
@@ -53,8 +53,13 @@
         background-color:#FFD700;
         color: #000000;
       }
-      footer{
-        font-family:Arial Black;
+      #footer{
+        color:black;
+        padding: 5px;
+        width:350px;
+        height: 300px;
+        display: inline-block;
+        margin-top:140px;
       }
   </style>
   </head>
@@ -84,7 +89,7 @@
     <input type='button' value='+' onclick='botao(value)' class='botao'>   
     </div>
     <br>
-    <p>&copy; Rodrigo Moreira</p>
+    <p id="footer">&copy; Rodrigo Moreira</p>
     </form>
 <script type="text/javascript">
        function botao(numero){
