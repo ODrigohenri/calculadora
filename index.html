@@ -54,12 +54,7 @@
         color: #000000;
       }
       #footer{
-        color:black;
-        padding: 5px;
-        width:350px;
-        height: 300px;
-        display: inline-block;
-        margin-top:140px;
+          color: black;        
       }
   </style>
   </head>
@@ -86,9 +81,8 @@
     <input type='button' value='C' onclick='reset()'  id='yellow' class='botao'> 
     <input type='button' value='=' onclick='calculate()' class='botao'>
     <input type='button' value='0' onclick='botao(value)' class='botao'> 
-    <input type='button' value='+' onclick='botao(value)' class='botao'>   
+    <input type='button' value='+' onclick='botao(value)' class='botao'>
     </div>
-    <br>
     <p id="footer">&copy; Rodrigo Moreira</p>
     </form>
 <script type="text/javascript">
@@ -111,13 +105,15 @@
        if(backgroundd = 0){document.body.style.background = "url(https://image.freepik.com/vetores-gratis/fundo-de-mosaico-geometrico-de-cor-cinza-abstrato_1055-3132.jpg)";
      document.body.style.backgroundSize = "cover";
      document.body.style.backgroundRepeat = "no-repeat";
-     document.body.style.width =  "50vw";
+     document.body.style.width =  "100vw";
+     document.body.style.height =  "1000vw";
      document.body.style.margin =  "0 auto";
          }else{ 
      document.body.style.background = "url(https://image.freepik.com/vetores-gratis/fundo-de-mosaico-geometrico-de-cor-cinza-abstrato_1055-3132.jpg)";
      document.body.style.backgroundSize = "cover";
      document.body.style.backgroundRepeat = "no-repeat";
-     document.body.style.width =  "50vw";
+     document.body.style.width =  "100vw";
+     document.body.style.height =  "100vw";
      document.body.style.margin =  "0 auto";
       };
      };
