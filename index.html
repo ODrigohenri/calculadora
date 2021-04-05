@@ -7,7 +7,11 @@
         color: white;
         text-align: center;
         font-family: Arial;
-      }
+        background-image:url("https://image.freepik.com/vetores-gratis/ilustracao-poligonal-branca-cinza-que-consistem-em-triangulos-fundo-geometrico-em-estilo-origami-com-gradiente-design-triangular-para-o-seu-negocio_43969-934.jpg");      
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-size:cover;
+      }     
       form{
         background-color: #4F4F4F;
         padding: 5px;
@@ -15,11 +19,8 @@
         height: 300px;
         border-radius: 5px;
         position:fixed;
-        position: fixed;
-        left: 35%;
-        right:30%;
-        top: 25%;
-        bottom: 33%
+        margin-left:35%;
+        top: 25%;      
       }
       #visor{
         border:none;
@@ -59,14 +60,14 @@
       }
       #footer{
           position:fixed;
-          bottom: 0px;
-          left: 30%;
-          right:35%;
-          color: black;        
+          color: black;
+          position:fixed;
+          margin-left:100px;
+          font-weight: 900;
       }
   </style>
   </head>
-  <body onload = 'fundo()'>
+  <body>
     <form id='calculadora'>
     <input type='text' id='visor'>
     <br><br>
@@ -91,7 +92,7 @@
     <input type='button' value='0' onclick='botao(value)' class='botao'> 
     <input type='button' value='+' onclick='botao(value)' class='botao'>
     </div>
-    <p id="footer">&copy; Rodrigo Moreira</p>
+    <p id="footer">&copy; RodrigoMoreira</p>
     </form>
 <script type="text/javascript">
        function botao(numero){
@@ -106,25 +107,7 @@
         var resultado = eval(document.getElementById('visor').value)
         document.getElementById('visor').value = resultado;
      };
-     function fundo(){
-       
-       var backgroundd = 1
-       
-       if(backgroundd = 0){document.body.style.background = "url(https://image.freepik.com/vetores-gratis/fundo-de-mosaico-geometrico-de-cor-cinza-abstrato_1055-3132.jpg)";
-     document.body.style.backgroundSize = "cover";
-     document.body.style.backgroundRepeat = "no-repeat";
-     document.body.style.width =  "100vw";
-     document.body.style.height =  "1000vw";
-     document.body.style.margin =  "0 auto";
-         }else{ 
-     document.body.style.background = "url(https://image.freepik.com/vetores-gratis/fundo-de-mosaico-geometrico-de-cor-cinza-abstrato_1055-3132.jpg)";
-     document.body.style.backgroundSize = "cover";
-     document.body.style.backgroundRepeat = "no-repeat";
-     document.body.style.width =  "100vw";
-     document.body.style.height =  "100vw";
-     document.body.style.margin =  "0 auto";
-      };
-     };
+   
 </script>
   </body>
 </html>
